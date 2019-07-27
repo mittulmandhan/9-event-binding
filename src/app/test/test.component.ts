@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-
+  public name = 'Mittul';
+  public greeting = '';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick() {
+    console.log('Hello Mittul');
+    this.greeting = 'Morning Mittul';
   }
 
 }
